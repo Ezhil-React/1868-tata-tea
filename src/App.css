@@ -1,38 +1,269 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap");
+@font-face {
+  font-family: "HypatiaSansPro-Regular";
+  src: url("/src/fonts/HypatiaSansPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HypatiaSansPro-Light";
+  src: url("/src/fonts/HypatiaSansPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HypatiaSansPro-Semibold";
+  src: url("/src/fonts/HypatiaSansPro-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HypatiaSansPro-Bold";
+  src: url("/src/fonts/HypatiaSansPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HypatiaSansPro-ExtraLight";
+  src: url("/src/fonts/HypatiaSansPro-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HypatiaSansPro-Black";
+  src: url("/src/fonts/HypatiaSansPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primary-white: #ffffff;
+  --secondary-orange: #d9b99a;
+  --text-para: #595956;
+  --primary-button: #af702d;
+}
+body {
+  font-family: "HypatiaSansPro-Regular";
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: normal;
+}
+.announcement-bar {
+  background-color: #d9b99a;
+  border-bottom: 1px solid var(--primary-white);
+}
+.announcement-bar__message {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.95px;
+  font-family: "Montserrat", sans-serif;
+  padding: 11px 2px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: var(--primary-white);
+}
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h4.title {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: var(--text-para);
+  font-family: HypatiaSansPro-Light;
+}
+h4.title i {
+  font: inherit;
+  font-style: italic;
+  text-transform: lowercase;
+}
+.tt-desc {
+  font-size: 22px;
+  line-height: 1;
+  color: #5b5a53;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+p {
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 30px;
+  margin: auto;
+  color: var(--text-para);
+  padding: 0 5px;
+}
+.btn {
+  border-radius: 0;
+  padding: 10px 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.btn-outline-primary {
+  border: 1px solid #cbc7b5;
+  color: #99988b;
+  background-color: #fff;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
+  background-color: var(--primary-button);
+  border: 1px solid var(--primary-button);
+  color: var(--primary-white);
+  box-shadow: none;
+}
+.flavour-desc {
+  font-family: HypatiaSansPro-Light;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #5b5a53;
+  margin-left: 10px;
+  padding: 40px;
+  text-align: justify;
+  width: 45vw;
+  padding-bottom: 0;
+}
+.flavour-wraper {
+  position: absolute;
+  right: 60px;
+  max-width: 320px;
+  width: 100%;
+  bottom: 0;
+  max-height: 432px;
+  height: 100%;
+}
+.flavour-wraper .flavour-content {
+  width: 100%;
+  background-color: #d9b99a;
+  color: #474641;
+  height: 100%;
+  padding: 95px 57px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flavour-wraper .flavour-content h4 {
+  font-size: 34px;
+  font-family: HypatiaSansPro-Light;
+  color: #474641;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.flavour_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-35%, 35%);
+}
+.tataTea-orange {
+  margin: auto;
+  position: relative;
+  background-color: #e4d2bc;
+  padding: 90px 0;
+}
+.followus {
+  position: relative;
+  transition: all 0.2s linear;
+}
+.followus a {
+  display: block;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.followus a:hover {
+  transition: all 0.2s linear;
+}
+.followus a:hover span.fu-overlay:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s linear;
+  background-color: #000;
+  opacity: 0.5;
+}
+.followus a:hover span.fu-overlay:before {
+  content: " ";
+  opacity: 1;
+  background: url("../src/img/instagram-icon.svg") no-repeat center center;
+  background-size: 40px 40px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 992px) {
+  .navbar-nav-m .nav-link,
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: var(--text-para);
+    font-size: 22px;
+    position: relative;
+  }
+  .navbar-nav-m .nav-link:hover,
+  .navbar-nav .nav-link:hover {
+    color: var(--text-para);
+  }
+  .navbar-nav-m .nav-link:hover:after,
+  .navbar-nav-m .nav-link:focus:after,
+  .navbar-nav-m .active .nav-link:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: -6px;
+    display: block;
+    width: calc(100% - 40px);
+    transition: 0.4s;
+    left: 50%;
+    background-color: #d9b99a;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1280px) {
+  .tt-lr {
+    margin-top: -102px;
+    position: relative;
+    z-index: 9;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 1025px) {
+  .flavour-desc {
+    width: 100%;
+    padding: 10px 0 0 0;
+    margin-left: 0;
+  }
+  .flavour-wraper {
+    position: relative;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .flavour_img {
+    transform: translate(0, 75%);
+  }
+  .slick-slide-image {
+    height: 100%;
   }
 }

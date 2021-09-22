@@ -1,0 +1,141 @@
+footer {
+    position: relative;
+    background-color: #dfc6ab;
+    padding: 50px 0;
+    margin: 90px 0 0 0;
+}
+footer ul.follow-us {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul.follow-us li {
+    padding: 0;
+    margin: 0 15px;
+    float: left;
+}
+footer ul.follow-us li a {
+    color: #fff;
+    font-size: 20px;
+}
+footer ul.follow-us li a:hover {
+    color: #fff;
+}
+.form-input {
+    background-color: #fff;
+    height: 41px;
+    line-height: 41px;
+    padding: 0;
+    border: 0;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1.64px;
+    font-family: HypatiaSansPro-Semibold;
+    padding: 0 15px;
+    min-height: 41px;
+    border-radius: 0;
+    margin-right: 3px;
+}
+.form-input:focus {
+    border: none;
+    outline: none;
+}
+footer .btn {
+    border: 1px solid #ffffff;
+    height: 41px;
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.75;
+}
+footer .btn:focus,
+footer .btn:hover {
+    opacity: 1;
+}
+footer .form-check-input {
+    width: 2em;
+    height: 2em;
+    border-radius: 0;
+    border: 1px solid #fff;
+    margin-top: 0;
+}
+footer .form-check-input[type="checkbox"] {
+    border-radius: 0;
+}
+footer .form-check-input:checked {
+    background-color: #b0712e;
+    border-color: #b0712e;
+    box-shadow: none;
+}
+.form-check-input:focus {
+    border-color: #b0712e;
+    box-shadow: none;
+}
+footer .form-check-label {
+    font-family: HypatiaSansPro-Light;
+    color: #6f6f6a;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+footer .form-check-label a {
+    color: #6f6f6a;
+    text-decoration: underline;
+}
+.footer-menu {
+    padding: 0 8%;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 100%;
+}
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu li {
+    margin-bottom: 15px;
+}
+.footer-menu li a {
+    font-family: HypatiaSansPro-Semibold;
+    font-weight: 500;
+    color: #595956;
+    font-size: 14px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footer-menu p,
+.footer-menu a {
+    font-family: HypatiaSansPro-Semibold;
+    font-weight: 500;
+    color: #595956;
+    font-size: 14px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+}
+footer .veg p {
+    font-family: HypatiaSansPro-light;
+    font-weight: 300;
+    color: #595956;
+    font-style: italic;
+    text-transform: none;
+    line-height: normal;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+footer .veg p:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url("../../src/img/veg.svg") no-repeat center;
+    background-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+@media (max-width: 480px) {
+    h4.title {
+        font-size: 28px;
+    }
+}

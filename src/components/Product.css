@@ -1,0 +1,105 @@
+.productSection {
+    margin-top: 65px;
+}
+.productSection .slick-slider .slick-arrow {
+    opacity: 1;
+}
+.productSection .slick-next {
+    right: -80px;
+    z-index: 99;
+    top: 33.333%;
+}
+.productSection .slick-prev {
+    left: -80px;
+    z-index: 99;
+    top: 33.333%;
+}
+.productSection .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+.product-thumb {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.product-thumb:hover img:nth-child(1) {
+    opacity: 0;
+    height: auto;
+    width: auto;
+}
+.product-thumb img:nth-child(2) {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.product-thumb:hover img:nth-child(2) {
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+.product-thumb:hover .product-name-d {
+    opacity: 0;
+}
+.product-thumb .addtocart_wrapper {
+    display: none;
+    -webkit-transition: display 0.3s ease-out;
+    transition: display 0.3s ease-out;
+    background-color: #fff;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    left: 0;
+    padding: 10px 0px;
+}
+.product-thumb:hover .addtocart_wrapper {
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: auto;
+}
+.productSection .product-origin {
+    color: #99988b;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.productSection .product_name {
+    font-size: 17px;
+    color: #474641;
+    line-height: 1.2;
+    margin-top: 7px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-weight: 400;
+}
+.productSection .product-description {
+    display: block;
+}
+.productSection .product-price {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+.productSection .product-price dd {
+    font-weight: 800;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width: 1025px) {
+    .productSection .slick-next {
+        right: 0;
+    }
+    .productSection .slick-prev {
+        left: 0;
+    }
+}
