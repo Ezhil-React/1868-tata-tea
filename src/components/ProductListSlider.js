@@ -209,7 +209,7 @@ export default class SimpleSlider extends Component {
                                         </dl>
                                     </div>
                                     <div className="addtocart_wrapper">
-                                        <h6 className="product_name">Darjeeling Spring Blossom </h6>
+                                        <h6 className="product_name">Darjeeling Spring Blossoms </h6>
                                         <div className="mt-4">
                                             <Button variant="outline-primary">Add to Cart</Button>{' '}
                                         </div></div></div>
