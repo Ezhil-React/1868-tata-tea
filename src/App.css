@@ -133,10 +133,10 @@ p {
   font-size: 22px;
   line-height: 1.4;
   color: #5b5a53;
-  margin-left: 10px;
+  margin-left: 60px;
   padding: 40px;
   text-align: justify;
-  width: 45vw;
+  width: 40vw;
   padding-bottom: 0;
 }
 .flavour-wraper {
@@ -250,7 +250,7 @@ p {
 @media (max-width: 1025px) {
   .flavour-desc {
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 10px 25px;
     margin-left: 0;
   }
   .flavour-wraper {
